@@ -1,0 +1,11 @@
+<form action="/url" method="post">
+    Enter URL: 
+    <input type ="text" name="long_url">
+    <input type="submit" value="Submit">
+ </form>
+
+<ul>
+	<%	@urls.each do |url| %>
+		<li><%= url.short_url%></li>
+	<%end%>
+</ul>
